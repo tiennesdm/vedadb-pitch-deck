@@ -1,0 +1,84 @@
+title: VedaDB Investor Pitch Deck
+size: [1280, 720]
+theme:
+  colors:
+    primary: "#0B1426"
+    secondary: "#475569"
+    accent: "#C8A45C"
+    background: "#F5F5F0"
+    text: "#1A1A2E"
+    light: "#FFFFFF"
+    muted: "#1E3A5F"
+    border: "#E0E0E0"
+  textStyles:
+    title:
+      fontSize: 32
+      color: "$primary"
+      fontFamily: "Liter"
+    subtitle:
+      fontSize: 22
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans"
+    body:
+      fontSize: 20
+      color: "$text"
+      fontFamily: "QuattrocentoSans"
+      lineHeight: 1.6
+    bigNumber:
+      fontSize: 56
+      color: "$accent"
+      fontFamily: "Liter"
+    caption:
+      fontSize: 13
+      color: "$secondary"
+      fontFamily: "QuattrocentoSans"
+    coverTitle:
+      fontSize: 52
+      color: "$accent"
+      fontFamily: "Liter"
+    coverSubtitle:
+      fontSize: 24
+      color: "$light"
+      fontFamily: "QuattrocentoSans"
+    chapterTitle:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: "Liter"
+    chapterNumber:
+      fontSize: 120
+      color: "#FFFFFF1A"
+      fontFamily: "Liter"
+  tableStyles:
+    default:
+      fontSize: 16
+      fontFamily: "QuattrocentoSans"
+      headerFill: "$primary"
+      headerColor: "$light"
+      headerBold: true
+      bodyFill:
+        - "$light"
+        - "$background"
+      bodyColor: "$text"
+      border:
+        style: solid
+        width: 1
+        color: "$border"
+pages:
+  - pages/p01_cover.page
+  - pages/p02_toc.page
+  - pages/p03_ch1_problem.page
+  - pages/p04_data_chaos.page
+  - pages/p05_ch2_solution.page
+  - pages/p06_vedadb_overview.page
+  - pages/p07_ch3_market.page
+  - pages/p08_tam_sam_som.page
+  - pages/p09_ch4_competition.page
+  - pages/p10_competitive_matrix.page
+  - pages/p11_why_vedadb.page
+  - pages/p12_ch5_product.page
+  - pages/p13_architecture.page
+  - pages/p14_ch6_business.page
+  - pages/p15_business_model.page
+  - pages/p16_ch7_team_ask.page
+  - pages/p18_the_ask.page
+  - pages/p19_final.page
