@@ -86,7 +86,7 @@
     <div class="slides-wrapper container">
         <!-- SLIDE 1: Cover -->
         <div class="slide">
-            <div class="slide-number">Slide 1 / 12</div>
+            <div class="slide-number">Slide 1 / 14</div>
             <h2 style="font-size: 48px;">VedaDB</h2>
             <p style="font-size: 24px;"><span class="gradient">The World's First Zero-Compromise Multi-Model Database</span></p>
             <div style="margin-top: 40px;">
@@ -94,6 +94,7 @@
                 <span class="badge badge-green">7 Engines Built</span>
                 <span class="badge badge-blue">2,452 Files</span>
                 <span class="badge badge-orange">Beta Ready</span>
+                <span class="badge badge-purple">14 AI Functions</span>
             </div>
             <p style="margin-top: 32px; font-size: 14px;">
                 <strong>Founder:</strong> Shubahm Mehta | 
@@ -104,7 +105,7 @@
 
         <!-- SLIDE 2: Problem -->
         <div class="slide">
-            <div class="slide-number">Slide 2 / 12</div>
+            <div class="slide-number">Slide 2 / 14</div>
             <h2>The Problem</h2>
             <p style="font-size: 20px; color: var(--text);">Modern applications need <strong>multiple data models</strong> — but each requires a separate database.</p>
             <div class="stats-grid">
@@ -123,7 +124,7 @@
 
         <!-- SLIDE 3: Solution -->
         <div class="slide">
-            <div class="slide-number">Slide 3 / 12</div>
+            <div class="slide-number">Slide 3 / 14</div>
             <h2>The Solution: <span class="gradient">7 Engines, 1 System</span></h2>
             <p>VedaDB unifies 7 specialized storage engines under a single query layer. One connection string. One admin panel. One backup strategy.</p>
             <table>
@@ -140,7 +141,7 @@
 
         <!-- SLIDE 4: Architecture -->
         <div class="slide">
-            <div class="slide-number">Slide 4 / 12</div>
+            <div class="slide-number">Slide 4 / 14</div>
             <h2>Product Architecture</h2>
             <div class="stats-grid">
                 <div class="stat-card"><div class="stat-number">2,452</div><div class="stat-label">Total Files</div></div>
@@ -153,15 +154,73 @@
                 <li><strong>Query Processor:</strong> SQL parser, planner, optimizer, router</li>
                 <li><strong>7 Storage Engines:</strong> Each optimized for its data model</li>
                 <li><strong>Rust SIMD Engine:</strong> AVX2/NEON acceleration for 5-10x vector operations</li>
-                <li><strong>AI Agent System:</strong> Auto-optimization, auto-scaling, query recommendations</li>
+                <li><strong>AI System:</strong> 14 SQL AI functions, NL2SQL, AutoTuner (Bayesian Optimization), Semantic Cache</li>
                 <li><strong>Replication:</strong> WAL-based, Raft consensus, multi-region</li>
                 <li><strong>Interfaces:</strong> REST API, WebSocket, gRPC</li>
             </ul>
         </div>
 
-        <!-- SLIDE 5: Market -->
+        <!-- SLIDE 5: AI Capabilities (NEW) -->
         <div class="slide">
-            <div class="slide-number">Slide 5 / 12</div>
+            <div class="slide-number">Slide 5 / 14</div>
+            <h2>AI-Powered Intelligence <span class="gradient">Built-In</span></h2>
+            <p>AI doesn't bolt-on — it's native. 14 SQL functions, natural language queries, and self-tuning optimization run inside the database.</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card"><div class="stat-number">14</div><div class="stat-label">Native AI SQL Functions</div></div>
+                <div class="stat-card"><div class="stat-number">40%</div><div class="stat-label">Latency Reduction</div></div>
+                <div class="stat-card"><div class="stat-number">40-80%</div><div class="stat-label">Embedding Cost Savings</div></div>
+                <div class="stat-card"><div class="stat-number">0</div><div class="stat-label">External AI Services Needed</div></div>
+            </div>
+            
+            <h3>Key AI Capabilities</h3>
+            <table>
+                <tr><th>Capability</th><th>Description</th><th>Technology</th></tr>
+                <tr><td><strong>NL2SQL</strong></td><td>Natural Language → SQL queries</td><td>Anthropic Claude API</td></tr>
+                <tr><td><strong>AutoTuner</strong></td><td>Self-tuning 200+ parameters</td><td>Bayesian Optimization, Gaussian Process</td></tr>
+                <tr><td><strong>Semantic Cache</strong></td><td>LRU embedding deduplication</td><td>LRU cache with vector similarity</td></tr>
+                <tr><td><strong>AI SQL Functions</strong></td><td>EMBED, AI_CLASSIFY, AI_SENTIMENT, etc.</td><td>Native SQL execution</td></tr>
+                <tr><td><strong>Privacy</strong></td><td>Differential privacy for AI</td><td>Laplace & Gaussian noise</td></tr>
+            </table>
+        </div>
+
+        <!-- SLIDE 6: AI SQL Functions (NEW) -->
+        <div class="slide">
+            <div class="slide-number">Slide 6 / 14</div>
+            <h2>14 Native <span class="gradient">AI SQL Functions</span></h2>
+            <p>Run AI directly in SQL queries. No external APIs. No network latency. No per-token costs.</p>
+            
+            <div style="margin: 20px 0;">
+                <span class="badge badge-purple">EMBED()</span>
+                <span class="badge badge-purple">AI_SIMILARITY()</span>
+                <span class="badge badge-purple">AI_CLASSIFY()</span>
+                <span class="badge badge-purple">AI_SENTIMENT()</span>
+                <span class="badge badge-purple">AI_KEYWORDS()</span>
+                <span class="badge badge-purple">AI_REDACT()</span>
+                <span class="badge badge-blue">HYBRID_RANK()</span>
+                <span class="badge badge-blue">VECTOR_DISTANCE()</span>
+                <span class="badge badge-blue">RECOMMEND_VECTOR_INDEX()</span>
+                <span class="badge badge-blue">DOT()</span>
+                <span class="badge badge-green">VECTOR_NORM()</span>
+                <span class="badge badge-green">L2_NORMALIZE()</span>
+                <span class="badge badge-orange">DP_NOISE_LAPLACE()</span>
+                <span class="badge badge-orange">DP_NOISE_GAUSSIAN()</span>
+            </div>
+            
+            <h3>Use Cases</h3>
+            <ul>
+                <li><strong>Semantic Search:</strong> <code style="color: #c084fc;">SELECT * FROM docs ORDER BY AI_SIMILARITY(content, EMBED('query')) DESC</code></li>
+                <li><strong>Auto-Classification:</strong> <code style="color: #c084fc;">SELECT AI_CLASSIFY(support_ticket, 'urgency') FROM tickets</code></li>
+                <li><strong>Privacy-Preserving Analytics:</strong> <code style="color: #c084fc;">SELECT AVG(salary + DP_NOISE_LAPLACE(10000)) FROM employees</code></li>
+                <li><strong>Hybrid Search:</strong> <code style="color: #c084fc;">SELECT * FROM products WHERE HYBRID_RANK(text_col, vector_col, 'query') > 0.8</code></li>
+            </ul>
+            
+            <p style="margin-top: 16px;"><span class="badge badge-green">Local CBOW embeddings</span> <span class="badge badge-blue">OpenAI compatible</span> <span class="badge badge-purple">Cohere compatible</span></p>
+        </div>
+
+        <!-- SLIDE 7: Market (was Slide 5) -->
+        <div class="slide">
+            <div class="slide-number">Slide 7 / 14</div>
             <h2>Market Opportunity</h2>
             <div class="stats-grid">
                 <div class="stat-card"><div class="stat-number">$406B</div><div class="stat-label">TAM (DBMS by 2034)</div></div>
@@ -174,20 +233,20 @@
 
         <!-- SLIDE 6: Business Model -->
         <div class="slide">
-            <div class="slide-number">Slide 6 / 12</div>
+            <div class="slide-number">Slide 8 / 14</div>
             <h2>Business Model</h2>
             <table>
                 <tr><th>Tier</th><th>Price</th><th>Target</th><th>Features</th></tr>
-                <tr><td><strong>Open Source</strong></td><td>Free</td><td>Developers</td><td>All 7 engines, single-node, community support</td></tr>
-                <tr><td><strong>Cloud</strong></td><td>$299/mo</td><td>Startups</td><td>Managed hosting, backups, monitoring</td></tr>
-                <tr><td><strong>Enterprise</strong></td><td>$999/mo</td><td>Fortune 500</td><td>Clustering, RBAC, SSO, audit, SLA</td></tr>
+                <tr><td><strong>Open Source</strong></td><td>Free</td><td>Developers</td><td>All 7 engines + 14 AI functions, single-node, community support</td></tr>
+                <tr><td><strong>Cloud</strong></td><td>$299/mo</td><td>Startups</td><td>+ AI AutoTuner, NL2SQL, managed hosting, backups, monitoring</td></tr>
+                <tr><td><strong>Enterprise</strong></td><td>$999/mo</td><td>Fortune 500</td><td>+ Advanced AI analytics, custom models, clustering, RBAC, SSO, audit, SLA</td></tr>
             </table>
             <p style="margin-top: 16px;"><span class="badge badge-green">85% Gross Margins</span> <span class="badge badge-purple">18x LTV/CAC</span> <span class="badge badge-blue">Land & Expand</span></p>
         </div>
 
         <!-- SLIDE 7: Competitive Advantage -->
         <div class="slide">
-            <div class="slide-number">Slide 7 / 12</div>
+            <div class="slide-number">Slide 9 / 14</div>
             <h2>Competitive Advantage</h2>
             <div class="stats-grid">
                 <div class="stat-card"><div class="stat-number">3-6x</div><div class="stat-label">Faster Queries</div></div>
@@ -205,7 +264,7 @@
 
         <!-- SLIDE 8: Traction -->
         <div class="slide">
-            <div class="slide-number">Slide 8 / 12</div>
+            <div class="slide-number">Slide 10 / 14</div>
             <h2>What We've Built</h2>
             <div class="stats-grid">
                 <div class="stat-card"><div class="stat-number">2,452</div><div class="stat-label">Files Written</div></div>
@@ -228,7 +287,7 @@
 
         <!-- SLIDE 9: Go-to-Market -->
         <div class="slide">
-            <div class="slide-number">Slide 9 / 12</div>
+            <div class="slide-number">Slide 11 / 14</div>
             <h2>Go-to-Market Strategy</h2>
             <h3>Phase 1: Developer Adoption (Now)</h3>
             <ul>
@@ -250,7 +309,7 @@
 
         <!-- SLIDE 10: Financials -->
         <div class="slide">
-            <div class="slide-number">Slide 10 / 12</div>
+            <div class="slide-number">Slide 12 / 14</div>
             <h2>Financial Projections</h2>
             <table>
                 <tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
@@ -264,7 +323,7 @@
 
         <!-- SLIDE 11: The Ask -->
         <div class="slide">
-            <div class="slide-number">Slide 11 / 12</div>
+            <div class="slide-number">Slide 13 / 14</div>
             <h2>The Ask: <span class="gradient">$5M Seed</span></h2>
             <div class="stats-grid">
                 <div class="stat-card"><div class="stat-number">50%</div><div class="stat-label">Engineering</div></div>
@@ -285,7 +344,7 @@
 
         <!-- SLIDE 12: Thank You -->
         <div class="slide">
-            <div class="slide-number">Slide 12 / 12</div>
+            <div class="slide-number">Slide 14 / 14</div>
             <h2 style="font-size: 48px; text-align: center;">Thank You</h2>
             <p style="font-size: 20px; text-align: center; margin: 24px 0;"><span class="gradient">One Database. Every Workload. Zero Compromises.</span></p>
             <div style="text-align: center; margin-top: 40px;">
